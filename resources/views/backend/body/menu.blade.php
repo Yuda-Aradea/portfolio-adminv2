@@ -59,94 +59,53 @@
         <!-- Dashboard -->
         <li class="menu-item @if (request()->is('admin/dashboard')) ? active : '' @endif">
             <a href="{{ route('dashboard') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-th-large"></i>
+                <i class="menu-icon tf-icons bx bx-home-circle"></i>
                 <div data-i18n="Analytics">Dashboard</div>
             </a>
         </li>
 
-        <!-- Header -->
-        <li class="menu-item @if (request()->is('admin/header')) ? active : '' @endif">
-            <a href="{{ route('admin.header') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-list-alt"></i>
-                <div data-i18n="Analytics">Header & Footer</div>
-            </a>
-        </li>
-
-        <!-- Section content -->
-        <li class="menu-header small text-uppercase">
-            <span class="menu-header-text">Section Content</span>
-
-        <li class="menu-item @if (request()->is('admin/section-home')) ? active : '' @endif">
-            <a href="{{ route('admin.section.home') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-home"></i>
-                <div data-i18n="Analytics">Home</div>
-            </a>
-        </li>
-
-        <li class="menu-item @if (request()->is('admin/section-about')) ? active : '' @endif">
-            <a href="{{ route('admin.section.about') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-user-alt"></i>
-                <div data-i18n="Analytics">About Me</div>
-            </a>
-        </li>
-
-        <li class="menu-item @if (request()->is('admin/section-skills')) ? active : '' @endif">
-            <a href="{{ route('admin.section.skills') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-lock-open"></i>
-                <div data-i18n="Analytics">Skills</div>
-            </a>
-        </li>
-
-        <li class="menu-item @if (request()->is('admin/section-portfolio/*')) ? active open : '' @endif">
+        <!-- Layouts -->
+        <li class="menu-item">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons fas fa-briefcase"></i>
-                <div data-i18n="Layouts">Portfolio</div>
+                <i class="menu-icon tf-icons bx bx-layout"></i>
+                <div data-i18n="Layouts">Layouts</div>
             </a>
 
             <ul class="menu-sub">
-                <li class="menu-item @if (request()->is('admin/section-portfolio/category')) ? active : '' @endif">
-                    <a href="{{ route('admin.section.category') }}" class="menu-link">
-                        <div data-i18n="Without menu">Category</div>
+                <li class="menu-item">
+                    <a href="layouts-without-menu.html" class="menu-link">
+                        <div data-i18n="Without menu">Without menu</div>
                     </a>
                 </li>
-                <li class="menu-item @if (request()->is('admin/section-portfolio/portolio')) ? active : '' @endif">
-                    <a href="{{ route('admin.section.portfolio') }}" class="menu-link">
-                        <div data-i18n="Without menu">All Portfolio</div>
+                <li class="menu-item">
+                    <a href="layouts-without-navbar.html" class="menu-link">
+                        <div data-i18n="Without navbar">Without navbar</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="layouts-container.html" class="menu-link">
+                        <div data-i18n="Container">Container</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="layouts-fluid.html" class="menu-link">
+                        <div data-i18n="Fluid">Fluid</div>
+                    </a>
+                </li>
+                <li class="menu-item">
+                    <a href="layouts-blank.html" class="menu-link">
+                        <div data-i18n="Blank">Blank</div>
                     </a>
                 </li>
             </ul>
         </li>
-
-        <li class="menu-item @if (request()->is('admin/section-services')) ? active : '' @endif">
-            <a href="{{ route('admin.section.services') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-book-reader"></i>
-                <div data-i18n="Analytics">Services</div>
-            </a>
-        </li>
-
-        <li class="menu-item @if (request()->is('admin/section-testimonials')) ? active : '' @endif">
-            <a href="{{ route('admin.section.testimonials') }}" class="menu-link">
-                <i class="menu-icon tf-icons fas fa-quote-left"></i>
-                <div data-i18n="Analytics">Testimonials</div>
-            </a>
-        </li>
-
-        <li class="menu-item @if (request()->is('admin/section-messages')) ? active : '' @endif">
-            <a href="{{ route('admin.section.messages') }}" class="menu-link">
-                <i class="menu-icon tf-icons fab fa-rocketchat"></i>
-                <div data-i18n="Analytics">Message</div>
-            </a>
-        </li>
-
-        </li>
-
 
         <li class="menu-header small text-uppercase">
             <span class="menu-header-text">COMPONENTS</span>
 
         <li class="menu-item @if (request()->is('admin/icon/*')) ? active open : '' @endif">
             <a href="javascript:void(0);" class="menu-link menu-toggle">
-                <i class="menu-icon tf-icons fas fa-icons"></i>
+                <i class="menu-icon tf-icons ri-brush-line"></i>
                 <div data-i18n="Layouts">Icons</div>
             </a>
 

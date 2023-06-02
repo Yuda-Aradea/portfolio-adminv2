@@ -15,38 +15,3 @@
         </div>
     </div>
 </x-app-layout>
-
-
-
-function confirmDelete(e) {
-e.preventDefault();
-
-var url = $(e).data('url');
-
-swal({
-title: 'Are you sure?',
-text: 'Once deleted, you will not be able to recover this imaginary file!',
-icon: 'warning',
-buttons: true,
-dangerMode: true,
-})
-.then((willDelete) => {
-if (willDelete) {
-swal('Poof! Your imaginary file has been deleted!', {
-icon: 'success',
-});
-$.ajax({
-url: "{{ route('admin.users.destroy', $user->id) }}",
-method: "POST",
-success: function(data) {
-console.log("Yes! It works");
-},
-error: function(data) {
-console.log("No! You are wrong!");
-}
-})
-} else {
-swal('Your imaginary file is safe!');
-}
-});
-}

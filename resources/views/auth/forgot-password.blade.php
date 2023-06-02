@@ -8,7 +8,7 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
 
-    <title>Forgot Password | Admin</title>
+    <title>Forgot Password Basic - Pages | Sneat - Bootstrap 5 HTML Admin Template - Pro</title>
 
     <meta name="description" content="" />
 
@@ -31,9 +31,6 @@
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/css/theme-default.css') }}"
         class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('backend/assets/css/demo.css') }}" />
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}">
 
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />

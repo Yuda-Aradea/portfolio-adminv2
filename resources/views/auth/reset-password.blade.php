@@ -32,9 +32,6 @@
         class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('backend/assets/css/demo.css') }}" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}">
-
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 

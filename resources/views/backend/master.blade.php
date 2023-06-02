@@ -32,9 +32,6 @@
         class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('backend/assets/css/demo.css') }}" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}">
-
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
@@ -44,15 +41,10 @@
     <!-- Icon CSS -->
     <link href="{{ asset('backend/assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
 
-    <!-- Toaster -->
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.css">
 
     <!-- Helpers -->
     <script src="{{ asset('backend/assets/vendor/js/helpers.js') }}"></script>
-
-    <!-- Datatables -->
-    <link href="https://cdn.datatables.net/v/bs5/dt-1.13.4/sl-1.6.2/datatables.min.css" rel="stylesheet" />
-
 
     <!--! Template customizer & Theme config files MUST be included after core stylesheets and helpers.js in the <head> section -->
     <!--? Config:  Mandatory theme config file contain global vars & default theme options, Set your preferred theme option in this file.  -->
@@ -109,7 +101,6 @@
 
     <script src="{{ asset('backend/assets/vendor/js/menu.js') }}"></script>
     <!-- endbuild -->
-
     <!-- Main JS -->
     <script src="{{ asset('backend/assets/js/main.js') }}"></script>
 
@@ -149,12 +140,12 @@
     </script>
 
     <!-- Ckeditor -->
-    <script src="{{ asset('backend/assets/ckeditor/ckeditor.js') }}"></script>
+    <script src="//cdn.ckeditor.com/4.6.2/standard/ckeditor.js"></script>
 
     <script>
         var options = {
-            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Files',
-            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Files&_token=',
+            filebrowserImageBrowseUrl: '/laravel-filemanager?type=Images',
+            filebrowserImageUploadUrl: '/laravel-filemanager/upload?type=Images&_token=',
             filebrowserBrowseUrl: '/laravel-filemanager?type=Files',
             filebrowserUploadUrl: '/laravel-filemanager/upload?type=Files&_token='
         };
@@ -162,29 +153,17 @@
 
     <script>
         CKEDITOR.replace('editor', options);
-        CKEDITOR.config.height = '15rem'
-        CKEDITOR.config.clipboard_handleImages = false
+        CKEDITOR.config.height = '20rem'
     </script>
-
-    <script>
-        $('#lfm').filemanager('file');
-    </script>
-
-    <!-- Datatables -->
-    <script src="https://cdn.datatables.net/v/bs5/dt-1.13.4/sl-1.6.2/datatables.min.js"></script>
-
-
-
 
     <!-- Remix icon js -->
     <script src="{{ asset('backend/assets/js/remix-icons-list.js') }}"></script>
+
     <!-- Material icon js -->
     <script src="{{ asset('backend/assets/js/materialdesign.init.js') }}"></script>
+
     <!-- Material icon js -->
     <script src="{{ asset('backend/assets/js/fontawesome.init.js') }}"></script>
-
-    <!-- File Manager -->
-    <script src="/vendor/laravel-filemanager/js/stand-alone-button.js"></script>
 
 
     <!-- Place this tag in your head or just before your close body tag. -->

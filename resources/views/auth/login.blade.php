@@ -32,9 +32,6 @@
         class="template-customizer-theme-css" />
     <link rel="stylesheet" href="{{ asset('backend/assets/css/demo.css') }}" />
 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="{{ asset('backend/assets/css/custom.css') }}">
-
     <!-- Vendors CSS -->
     <link rel="stylesheet" href="{{ asset('backend/assets/vendor/libs/perfect-scrollbar/perfect-scrollbar.css') }}" />
 
@@ -119,6 +116,13 @@
                                 <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
                             </div>
                         </form>
+
+                        <p class="text-center">
+                            <span>New on our platform?</span>
+                            <a href="auth-register-basic.html">
+                                <span>Create an account</span>
+                            </a>
+                        </p>
                     </div>
                 </div>
                 <!-- /Register -->

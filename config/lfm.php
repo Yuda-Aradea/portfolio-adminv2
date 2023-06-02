@@ -51,13 +51,12 @@ return [
             'startup_view' => 'list',
             'max_size'     => 50000, // size in KB
             'thumb' => true,
-            'thumb_width' => 250,
-            'thumb_height' => 250,
+            'thumb_width' => 80,
+            'thumb_height' => 80,
             'valid_mime'   => [
                 'image/jpeg',
                 'image/pjpeg',
                 'image/png',
-                'image/webp',
                 'image/gif',
                 'application/pdf',
                 'text/plain',
@@ -68,13 +67,12 @@ return [
             'startup_view' => 'grid',
             'max_size'     => 50000, // size in KB
             'thumb' => true,
-            'thumb_width' => 250,
-            'thumb_height' => 250,
+            'thumb_width' => 80,
+            'thumb_height' => 80,
             'valid_mime'   => [
                 'image/jpeg',
                 'image/pjpeg',
                 'image/png',
-                'image/webp',
                 'image/gif',
             ],
         ],
@@ -137,12 +135,11 @@ return [
         'image/jpeg',
         'image/pjpeg',
         'image/png',
-        'image/webp',
     ],
 
-    'thumb_img_width'          => 500, // px
+    'thumb_img_width'          => 200, // px
 
-    'thumb_img_height'         => 500, // px
+    'thumb_img_height'         => 200, // px
 
     /*
     |--------------------------------------------------------------------------
